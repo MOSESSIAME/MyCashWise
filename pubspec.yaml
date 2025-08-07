@@ -1,0 +1,78 @@
+name: MyCashWise
+description: "A Flutter project for managing personal finances."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cupertino icons for iOS-style icons
+  cupertino_icons: ^1.0.8
+
+  # --- State Management ---
+  provider: ^6.0.5         # Simple and effective state management
+
+  # --- Local Storage ---
+  hive: ^2.2.3             # Lightweight & blazing fast key-value database
+  hive_flutter: ^1.1.0     # Flutter-specific Hive extensions
+
+  # --- Unique IDs ---
+  uuid: ^4.0.0             # Generate unique IDs for transactions, etc.
+
+  # --- Charts for Analytics ---
+  fl_chart: ^1.0.0         # Modern, beautiful charts for analytic screens
+
+  # --- Notifications ---
+  flutter_local_notifications: ^19.4.0   # Local notifications for reminders
+
+  # --- Date & Number Formatting ---
+  intl: ^0.20.2            # Date/time formatting, localization
+
+  # --- Form Enhancements (Optional but useful) ---
+  flutter_form_builder: ^10.1.0   # Advanced form fields and validation
+
+  # --- Extra Icons (Optional) ---
+  font_awesome_flutter: ^10.7.0  # More icon choices for rich UI
+
+  # --- Animations (Optional) ---
+  animations: ^2.0.11      # For advanced, smooth transitions
+
+  # --- Lottie Animations for Landing Page ---
+  lottie: ^2.7.0           # Modern vector animations (for splash/landing)
+
+  # --- Launcher Icons ---
+  flutter_launcher_icons: ^0.13.1   # For custom app icons
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  # Asset images for your app UI (not the launcher icon)
+  assets:
+    - assets/images/AppLogo2.png # <-- Your logo image for UI usage
+    # - assets/icons/                  # Uncomment/add more asset folders as needed
+
+  # To use custom fonts, uncomment and configure below:
+  # fonts:
+  #   - family: YourFontFamily
+  #     fonts:
+  #       - asset: fonts/YourFont.ttf
+
+# --- FLUTTER LAUNCHER ICONS CONFIGURATION ---
+flutter_launcher_icons:
+  android: true            # Generate icons for Android
+  ios: true                # Generate icons for iOS
+  image_path: "assets/images/AppLogo2.png" # <-- Path to your icon image
+  min_sdk_android: 21      # Minimum Android SDK version (optional)
+  adaptive_icon_background: "#ffffff" # Icon background color for Android (optional)
+  adaptive_icon_foreground: "assets/images/AppLogo2.png" # Foreground for adaptive icon (optional)
